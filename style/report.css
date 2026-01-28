@@ -1,0 +1,360 @@
+@font-face {
+    font-family: "Valorant";
+    src: url("/fonts/Valorant\ Font.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "SourceSansPro";
+    src: url("/fonts/SourceSansPro-ExtraLight.otf") format("opentype");
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "SourceSansPro";
+    src: url("/fonts/SourceSansPro-ExtraLightIt.otf") format("opentype");
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: "SourceSansPro";
+    src: url("/fonts/SourceSansPro-Light.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "SourceSansPro";
+    src: url("/fonts/SourceSansPro-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "SourceSansPro";
+    src: url("/fonts/SourceSansPro-It.otf") format("opentype");
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: "SourceSansPro";
+    src: url("/fonts/SourceSansPro-Semibold.otf") format("opentype");
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "SourceSansPro";
+    src: url("/fonts/SourceSansPro-SemiboldIt.otf") format("opentype");
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: "SourceSansPro";
+    src: url("/fonts/SourceSansPro-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "SourceSansPro";
+    src: url("/fonts/SourceSansPro-BoldIt.otf") format("opentype");
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: "SourceSansPro";
+    src: url("/fonts/SourceSansPro-Black.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "SourceSansPro";
+    src: url("/fonts/SourceSansPro-BlackIt.otf") format("opentype");
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "SourceSansPro", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+  
+  body {
+    font-family: "SourceSansPro", sans-serif;
+    font-weight: 400;
+    background-color: #101822;
+    font-size: 1rem;
+    /* min-height: 6408px; */
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 7%;
+    background-color: #111823;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999999999;
+  }
+  
+  .logo {
+    display: flex;
+  }
+  
+  .logo img {
+    align-items: center;
+  }
+  
+  .navbar .menu-container {
+    order: 2;
+  }
+  
+  .navbar .menu-container a {
+    color: #ece8e1;
+    display: inline-block;
+    margin: 0 20px;
+    font-weight: 600;
+  }
+  
+  .navbar .menu-container a:hover {
+    color: #ff4654;
+  }
+  
+  .navbar .menu-container a::after {
+    content: "";
+    display: block;
+    padding-bottom: 8px;
+    border-bottom: 1.6px solid #ff4654;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+  }
+  
+  .navbar .menu-container a:hover::after {
+    transform: scaleX(0.5);
+  }
+  
+  .navbar .navbar-extra a {
+    color: #ece8e1;
+  }
+  
+  .navbar .navbar-extra a:hover {
+    color: #ece8e1;
+  }
+  
+  #hamburger-menu {
+    display: none;
+  }
+  
+  .container {
+    max-width: 500px;
+    margin: auto;
+    background-color: rgba(236,232,225,.3);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container h2 {
+    color: #ece8e1;
+  }
+
+  .report-bug {
+    background-image: url(/assets/Valorant_gun_shelf\ 1.png);
+    background-position: center;
+    background-size: contain;
+    margin-top: 7rem;
+    padding: 3rem;
+  }
+
+  label {
+    color: #ece8e1;
+  }
+
+  .custom-checkbox {
+    display: flex;
+    align-items: center;
+    color: #ece8e1;
+    width: 50%;
+    justify-content: center;
+  }
+
+  /* .checkbox-label input[type="checkbox"] {
+    width: 30%;
+    height: 90%;
+  } */
+
+.custom-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.custom-checkbox .checkmark {
+  width: 20px;
+  height: 20px;
+  background-color: #eee;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+  vertical-align: middle;
+  transition: 0.2s;
+}
+
+.custom-checkbox:hover .checkmark {
+  background-color: #ccc;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+  background-color: #4CAF50;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+  input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  button {
+    padding: 10px 15px;
+    background-color: #ff4654;
+    color: #ece8e1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 1rem auto;
+  }
+
+  .error {
+    color: red;
+    font-size: 0.9em;
+  }
+  
+  /* Footer */
+  .footer-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #31373D;
+    padding: 2rem;
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .social-media .socmed img {
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  .footer-container .copyright {
+    color: #ece8e1;
+    width: 45rem;
+    text-align: center;
+  }
+  
+  .footer-container .logo {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .footer-container .logo .palorant {
+    width: 4rem;
+    height: 4rem;
+  }
+  
+  .footer-container .copyright {
+    padding: 4%;
+    width: 97%;
+  }  
+  
+  /* Media Query */
+  @media (max-width: 768px) {
+    html {
+      font-size: 62.5%;
+    }
+  
+    .navbar .menu-container {
+      position: absolute;
+      top: 100%;
+      right: -100%;
+      background-color: #111823;
+      width: 30rem;
+      height: 100vh;
+      transition: 0.4s;
+    }
+  
+    .navbar .menu-container a {
+      display: block;
+      margin: 1.5rem;
+      padding: 0.5rem;
+      font-size: 2rem;
+    }
+  
+    .navbar .menu-container a::after {
+      transform-origin: 0 0;
+    }
+  
+    .navbar .menu-container a:hover::after {
+      transform: scaleX(0.2);
+    }
+  
+    .navbar .menu-container.active {
+      right: 0;
+    }
+  
+    .navbar .navbar-extra {
+      order: 2;
+    }
+  
+    #hamburger-menu {
+      display: inline-block;
+    }
+  
+    #hamburger-menu img {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+  

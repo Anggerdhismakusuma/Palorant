@@ -1,0 +1,384 @@
+@font-face {
+  font-family: "Valorant";
+  src: url("/fonts/Valorant\ Font.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("/fonts/SourceSansPro-ExtraLight.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("/fonts/SourceSansPro-ExtraLightIt.otf") format("opentype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("/fonts/SourceSansPro-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("/fonts/SourceSansPro-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("/fonts/SourceSansPro-It.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("/fonts/SourceSansPro-Semibold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("/fonts/SourceSansPro-SemiboldIt.otf") format("opentype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("/fonts/SourceSansPro-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("/fonts/SourceSansPro-BoldIt.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("/fonts/SourceSansPro-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("/fonts/SourceSansPro-BlackIt.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "SourceSansPro", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "SourceSansPro", sans-serif;
+  font-weight: 400;
+  background-color: #101822;
+  font-size: 1rem;
+  /* min-height: 6408px; */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 7%;
+  background-color: #111823;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999999999;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo img {
+  align-items: center;
+}
+
+.navbar .menu-container {
+  order: 2;
+}
+
+.navbar .menu-container a {
+  color: #ece8e1;
+  display: inline-block;
+  margin: 0 20px;
+  font-weight: 600;
+}
+
+.navbar .menu-container a:hover {
+  color: #ff4654;
+}
+
+.navbar .menu-container a::after {
+  content: "";
+  display: block;
+  padding-bottom: 8px;
+  border-bottom: 1.6px solid #ff4654;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .menu-container a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: #ece8e1;
+}
+
+.navbar .navbar-extra a:hover {
+  color: #ece8e1;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+.news-section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 4rem auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.logo {
+  width: 150px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 1.5rem;
+  color: #ece8e1;
+  font-weight: 900;
+  font-family: "Valorant";
+}
+
+.subtext {
+  color: #aaa;
+  margin-top: 10px;
+}
+
+.featured {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.featured-img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.featured-text {
+  flex: 1;
+}
+
+.featured-text h2 {
+  font-size: 28px;
+  margin: 10px 0;
+  color: #ece8e1;
+}
+
+.featured-text p {
+  color: #ece8e1;
+}
+
+.featured-text a {
+  color: #ff4d91;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.news-card {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 1px 1px 5px #000;
+}
+
+.news-card:hover {
+  transform: scale(1.02);
+}
+
+.news-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-content h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #ece8e1;
+}
+
+.card-content p {
+  color: #ece8e1;
+  font-size: 14px;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.patch {
+  background-color: #ff4d91;
+  color: #fff;
+}
+
+.event {
+  background-color: #4dd0ff;
+  color: #000;
+}
+
+.update {
+  background-color: #42f57b;
+  color: #000;
+}
+
+/* Footer */
+.footer-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #31373D;
+  padding: 2rem;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.social-media .socmed img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.footer-container .copyright {
+  color: #ece8e1;
+  width: 45rem;
+  text-align: center;
+}
+
+.footer-container .logo {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.footer-container .logo .palorant {
+  width: 4rem;
+  height: 4rem;
+}
+
+.footer-container .copyright {
+  padding: 4%;
+  width: 97%;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .navbar .menu-container {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #111823;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.4s;
+  }
+
+  .navbar .menu-container a {
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .menu-container a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .menu-container a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .navbar .menu-container.active {
+    right: 0;
+  }
+
+  .navbar .navbar-extra {
+    order: 2;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  #hamburger-menu img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .news-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
