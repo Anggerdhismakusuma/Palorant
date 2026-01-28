@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Report</title>
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="/style/report.css" />
+    <link
+      rel="shortcut icon"
+      href="/assets/Palorant Logo.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- Navbar START -->
+    <nav class="navbar">
+      <a href="#" class="logo">
+        <img src="/assets/Palorant Logo.png" alt="Logo" />
+      </a>
+
+      <div class="menu-container">
+        <a href="/html/home.html">HOME</a>
+        <a href="/html/agents.html">AGENTS</a>
+        <a href="/html/maps.html">MAPS</a>
+        <a href="/html/news.html">NEWS</a>
+        <a href="/html/report.html">REPORT</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="hamburger-menu"
+          ><img src="/assets/hamburger menu.png" alt=""
+        /></a>
+      </div>
+    </nav>
+    <!-- Navbar END -->
+
+    <!-- Section 1 - Report Bug START -->
+    <section class="report-bug">
+      <div class="container">
+        <h2>Report a Bug</h2>
+        <form id="bugForm" onsubmit="return validateForm()">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" placeholder="Username (at least 3 characters)"/>
+          <div class="error" id="usernameError"></div>
+
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" placeholder="xxxxxxxxxxxx@palorant.com"/>
+          <div class="error" id="emailError"></div>
+
+          <label for="server">Server:</label>
+          <select id="server" name="server">
+            <option value="">--Select a server--</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europe</option>
+            <option value="America">America</option>
+            <option value="Australia">Australia</option>
+          </select>
+          <div class="error" id="serverError"></div>
+
+          <label for="description">Bug Description:</label>
+          <textarea id="description" name="description" rows="5" placeholder="Min 10 characters"></textarea>
+          <div class="error" id="descriptionError"></div>
+
+          <label class="custom-checkbox">
+            <input type="checkbox" id="followup" />
+            <span class="checkmark"></span>
+            <p>I allow follow-up emails</p>
+          </label>
+          <div class="error" id="checkboxError"></div>
+
+          <button type="submit">Submit Report</button>
+        </form>
+      </div>
+    </section>
+    <!-- Section 1 - Report Bug END -->
+
+    <!-- Footer START -->
+    <footer>
+      <div class="footer-container">
+        <div class="social-media">
+          <a href="https://www.instagram.com/anggerdhisma_/" class="socmed"
+            ><img src="/assets/Instagram Logo.png" alt="Instagram"
+          /></a>
+          <a href="" class="socmed"
+            ><img src="/assets/Youtube.png" alt="Youtube"
+          /></a>
+          <a href="https://discord.com/users/980087631335555112" class="socmed"
+            ><img src="/assets/Discord.png" alt="Discord"
+          /></a>
+        </div>
+        <p class="copyright">
+          &copy; 2025 Giot Company, Inc. GIOT COMPANY, PALORANT, and any
+          associated logos are trademarks, service marks, and/or registered
+          trademarks of Giot Company, Inc.
+        </p>
+      </div>
+    </footer>
+    <!-- Footer END -->
+
+    <!-- JS -->
+    <script src="/js/report.js"></script>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skye</title>
+
+    <!-- Style -->
+    <link
+      rel="shortcut icon"
+      href="/assets/Skye Head.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/style/agent.css" />
+  </head>
+  <body>
+    <!-- Navbar START -->
+    <nav class="navbar">
+      <a href="#" class="logo">
+        <img src="/assets/Palorant Logo.png" alt="Logo" />
+      </a>
+
+      <div class="menu-container">
+        <a href="/html/home.html">HOME</a>
+        <a href="/html/agents.html">AGENTS</a>
+        <a href="/html/maps.html">MAPS</a>
+        <a href="/html/news.html">NEWS</a>
+        <a href="/html/report.html">REPORT</a>
+      </div>
+
+      <a href="#" id="hamburger-menu"
+        ><img src="/assets/hamburger menu.png" alt=""
+      /></a>
+    </nav>
+    <!-- Navbar END -->
+
+    <!-- Section 1 - Agent Desciption START-->
+    <section class="agent-description">
+      <div class="description">
+        <div class="left-side">
+          <div class="agent-role">
+            <img src="/assets/Initiator.png" alt="initiator" class="role-img" />
+            <p class="role">Initiator</p>
+          </div>
+          <h1 class="agent-name">SKYE</h1>
+          <p class="agent-story">
+            Hailing from Australia, Skye and her band of beasts trail-blaze the
+            way through hostile territory. With her creations hampering the
+            enemy, and her power to heal others, the team is strongest and
+            safest by Skye’s side.
+          </p>
+          <div class="skill">
+            <div class="playstyle">
+              <h4>PLAYSTYLE</h4>
+              <p>Support</p>
+            </div>
+            <div class="difficulty">
+              <h4>DIFFICULTY</h4>
+              <p>Medium</p>
+            </div>
+            <div class="special-ability">
+              <p>Special Ability</p>
+              <div class="ability-img">
+                <img src="/assets/Regrowth.png" alt="" />
+                <img src="/assets/Trailblazer.png" alt="" />
+                <img src="/assets/Guiding Light.png" alt="" />
+                <img src="/assets/Seekers.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-side">
+          <img src="/assets/Skye.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- Section 1 - Agent Desciption END-->
+
+    <!-- Section 2 - Ability Details START-->
+    <section class="abilities-details">
+      <div class="ability">
+        <p class="ability-details">Abilty Details</p>
+        <div class="ability-img">
+          <img src="/assets/Regrowth.png" alt="" onclick="switchSkill('c')"/>
+          <img src="/assets/Trailblazer.png" alt="" onclick="switchSkill('q')"/>
+          <img src="/assets/Guiding Light.png" alt="" onclick="switchSkill('e')"/>
+          <img src="/assets/Seekers.png" alt="" onclick="switchSkill('x')"/>
+        </div>
+        <div class="ability-desc">
+          <p id="skill-name"></p>
+          <div class="group">
+            <p id="skill-desc"></p>
+            <video id="skill-vid" autoplay muted loop width="600">
+              <source src="/assets/skye_c_compressed(1).mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section 2 - Ability Details END-->
+    <script src="/js/script.js"></script>
+    <script src="/js/skye.js"></script>
+  </body>
+</html>

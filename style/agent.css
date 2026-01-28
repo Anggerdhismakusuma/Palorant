@@ -1,0 +1,431 @@
+@font-face {
+  font-family: "Valorant";
+  src: url("/fonts/Valorant\ Font.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("/fonts/SourceSansPro-ExtraLight.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("/fonts/SourceSansPro-ExtraLightIt.otf") format("opentype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("/fonts/SourceSansPro-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("/fonts/SourceSansPro-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("/fonts/SourceSansPro-It.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("/fonts/SourceSansPro-Semibold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("/fonts/SourceSansPro-SemiboldIt.otf") format("opentype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("/fonts/SourceSansPro-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("/fonts/SourceSansPro-BoldIt.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("/fonts/SourceSansPro-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("/fonts/SourceSansPro-BlackIt.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "SourceSansPro", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "SourceSansPro", sans-serif;
+  font-weight: 400;
+  background-color: grey;
+  font-size: 1rem;
+  /* min-height: 6408px; */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 7%;
+  background-color: #111823;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999999999;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo img {
+  align-items: center;
+}
+
+.navbar .menu-container {
+  order: 2;
+}
+
+.navbar .menu-container a {
+  color: #ece8e1;
+  display: inline-block;
+  margin: 0 20px;
+  font-weight: 600;
+}
+
+.navbar .menu-container a:hover {
+  color: #ff4654;
+}
+
+.navbar .menu-container a::after {
+  content: "";
+  display: block;
+  padding-bottom: 8px;
+  border-bottom: 1.6px solid #ff4654;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .menu-container a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: #ece8e1;
+}
+
+.navbar .navbar-extra a:hover {
+  color: #ece8e1;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+.agent-description {
+    background-color: #111823;
+    height: 100vh;
+}
+
+.agent-description {
+  background-image: url("/assets/Loading_Canyon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.agent-description .description {
+    margin-top: 4.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: flex-start;
+    align-items: start;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.agent-description .description .left-side {
+  width: 80%;
+}
+
+.agent-description .description .right-side {
+  width: 50%;
+}
+
+.agent-description .description .left-side .agent-role {
+    display: flex;
+    font-size: 2.8rem;
+    color: #ece8e1;
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.agent-description .description .left-side .agent-role p {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.agent-description .description .left-side .agent-name {
+  font-size: 3rem;
+  color: #ece8e1;
+  font-weight: 900;
+  letter-spacing: 1.5rem;
+}
+
+.agent-description .description .left-side .agent-story {
+  font-size: 1.5rem;
+  font-weight: 200;
+  letter-spacing: .5rem;
+  width: 80%;
+  color: #ece8e1;
+}
+
+.agent-description .description .left-side .skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ece8e1;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.agent-description .description .left-side .skill {
+  margin-top: 1rem;
+}
+
+.agent-description .description .left-side .skill .playstyle h4 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #ece8e1;
+}
+
+.agent-description .description .left-side .skill .playstyle p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #ece8e1;
+}
+
+.agent-description .description .left-side .skill .difficulty h4 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #ece8e1;
+}
+
+.agent-description .description .left-side .skill .difficulty p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #ece8e1;
+}
+
+.agent-description .description .left-side .skill .special-ability p{
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #ece8e1;
+}
+
+.agent-description .description .left-side .skill .special-ability .abilty-img{
+  background-color: #ff4654;
+}
+
+.agent-description .description .agent-role .role-img {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+}
+
+.agent-description .description .agent-role .role {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #ece8e1;
+    font-family: "SourceSansPro", sans-serif;
+}
+
+.agent-description .description .right-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+
+.agent-description .description .right-side img {
+    width: 90%;
+}
+
+.abilities-details {
+  background-color: #111823;
+  height: 100vh;
+  padding: 2rem;
+}
+
+.abilities-details .ability-details {
+  text-align: center;
+  color: #ece8e1;
+  font-weight: 700;
+  font-size: 1.7rem;
+  letter-spacing: .5rem;
+  padding: .9rem;
+}
+
+.abilities-details .ability-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+} 
+
+.abilities-details .ability-desc #skill-name {
+  text-align: center;
+  color: #ece8e1;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: .3rem;
+  margin-top: 2rem;
+}
+
+.abilities-details .ability-desc .group {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  width: 90%;
+  margin: 4rem auto;
+}
+
+.abilities-details .ability-desc .group #skill-desc {
+  width: 40%;
+  color: #ece8e1;
+  font-size: 1.5rem;
+  font-weight: 200;
+  letter-spacing: .2rem;
+}
+
+.abilities-details .ability-desc .group video {
+  border: 2px solid #ece8e1;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .navbar .menu-container {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #111823;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.4s;
+  }
+
+  .navbar .menu-container a {
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .menu-container a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .menu-container a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .navbar .menu-container.active {
+    right: 0;
+  }
+
+  .navbar .navbar-extra {
+    order: 2;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  #hamburger-menu img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .agent-description .description {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7.6rem;
+  }
+
+  .agent-description .description .left-side {
+    width: 90%;
+  }
+
+  .agent-description .description .right-side {
+    width: 90%;
+  }
+
+  .abilities-details .ability {
+    margin: 9rem auto;
+  }
+
+  .abilities-details .ability-desc .group{
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .abilities-details .ability-desc .group #skill-desc{
+    width: 90%;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .abilities-details .ability-desc .group video {
+    width: 95%;
+  }
+}

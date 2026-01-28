@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sage</title>
+
+    <!-- Style -->
+    <link
+      rel="shortcut icon"
+      href="/assets/Sage Head.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/style/agent.css" />
+  </head>
+  <body>
+    <!-- Navbar START -->
+    <nav class="navbar">
+      <a href="#" class="logo">
+        <img src="/assets/Palorant Logo.png" alt="Logo" />
+      </a>
+
+      <div class="menu-container">
+        <a href="/html/home.html">HOME</a>
+        <a href="/html/agents.html">AGENTS</a>
+        <a href="/html/maps.html">MAPS</a>
+        <a href="/html/news.html">NEWS</a>
+        <a href="/html/report.html">REPORT</a>
+      </div>
+
+      <a href="#" id="hamburger-menu"
+        ><img src="/assets/hamburger menu.png" alt=""
+      /></a>
+    </nav>
+    <!-- Navbar END -->
+
+    <!-- Section 1 - Agent Desciption START-->
+    <section class="agent-description">
+      <div class="description">
+        <div class="left-side">
+          <div class="agent-role">
+            <img src="/assets/Sentinel.png" alt="initiator" class="role-img" />
+            <p class="role">Sentinel</p>
+          </div>
+          <h1 class="agent-name">SAGE</h1>
+          <p class="agent-story">
+            The stronghold of China, Sage creates safety for herself and her team wherever she goes. Able to revive fallen friends and stave off aggressive pushes, she provides a calm center to a hellish fight.
+          </p>
+          <div class="skill">
+            <div class="playstyle">
+              <h4>PLAYSTYLE</h4>
+              <p>Support</p>
+            </div>
+            <div class="difficulty">
+              <h4>DIFFICULTY</h4>
+              <p>Easy</p>
+            </div>
+            <div class="special-ability">
+              <p>Special Ability</p>
+              <div class="ability-img">
+                <img src="/assets/sage_c.png" alt="" />
+                <img src="/assets/sage_q.png" alt="" />
+                <img src="/assets/sage_e.png" alt="" />
+                <img src="/assets/sage_x.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-side">
+          <img src="/assets/Sage.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- Section 1 - Agent Desciption END-->
+
+    <!-- Section 2 - Ability Details START-->
+    <section class="abilities-details">
+      <div class="ability">
+        <p class="ability-details">Abilty Details</p>
+        <div class="ability-img">
+          <img src="/assets/sage_c.png" alt="" onclick="switchSkill('c')" />
+          <img src="/assets/sage_q.png" alt="" onclick="switchSkill('q')" />
+          <img src="/assets/sage_e.png" alt="" onclick="switchSkill('e')" />
+          <img src="/assets/sage_x.png" alt="" onclick="switchSkill('x')" />
+        </div>
+        <div class="ability-desc">
+          <p id="skill-name"></p>
+          <div class="group">
+            <p id="skill-desc"></p>
+            <video id="skill-vid" autoplay muted loop width="600">
+              <source src="" />
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section 2 - Ability Details END-->
+
+    <script src="/js/script.js"></script>
+    <script src="/js/sage.js"></script>
+  </body>
+</html>
